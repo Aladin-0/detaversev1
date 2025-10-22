@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { StarIcon, AustraliaFlag, USFlag, SparkleIcon } from './Icons';
 
@@ -22,12 +21,12 @@ const Hero: React.FC = () => {
               </span>
             </h1>
             <p className="mt-6 text-base text-gray-600 sm:text-lg md:max-w-xl md:mx-auto lg:mx-0">
-              Data Verse is a premier educational consultancy dedicated to helping students achieve their dreams of studying abroad. Our experienced team excels in providing tailored solutions, identifying new opportunities.
+             Data Verse is a top-tier data analytics academy dedicated to helping learners build job-ready skills and launch thriving analytics careers. Our industry experts excel in providing hands-on experience, real datasets, and personalized coaching.
             </p>
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md">
-                <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-semibold rounded-full text-black bg-brand-yellow hover:bg-yellow-400 md:py-4 md:text-lg md:px-10 transition duration-300">
-                  Book an Appointment
+                <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-semibold rounded-full text-white bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 md:py-4 md:text-lg md:px-10 transition duration-300">
+                  Enroll Now
                 </a>
               </div>
               <div className="mt-4 sm:mt-0 sm:ml-4 flex items-center justify-center lg:justify-start">
@@ -39,9 +38,9 @@ const Hero: React.FC = () => {
                 <div className="ml-4">
                   <div className="flex items-center">
                     <StarIcon className="w-5 h-5 text-yellow-400" />
-                    <span className="ml-1 font-bold text-gray-800">4.9 Rating</span>
+                    <span className="ml-1 font-bold text-gray-800">Thousands of</span>
                   </div>
-                  <div className="text-sm text-gray-500">(Google)</div>
+                  <div className="text-sm text-gray-500">students trust us</div>
                 </div>
               </div>
             </div>
@@ -57,10 +56,13 @@ const Hero: React.FC = () => {
                                 <path d="M0 20 C10 10, 30 10, 40 20" stroke="currentColor" strokeWidth="1" fill="none"></path>
                             </pattern>
                         </defs>
-                        <rect width="800" height="800" fill="url(#pattern-wavy)"></rect>
+                        <rect width="1000" height="1000" fill="url(#pattern-wavy)"></rect>
                     </svg>
                 </div>
-                <img className="relative mx-auto" src="https://i.imgur.com/n6bO0iN.png" alt="Graduation student" />
+                <video className="relative mx-auto rounded-lg shadow-xl" autoPlay loop muted playsInline>
+                  <source src="/Dataanylis.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
                 <div className="absolute top-1/4 left-0 -translate-x-1/4 animate-pulse">
                     <SparkleIcon className="w-8 h-8 text-yellow-400"/>
                     <SparkleIcon className="w-5 h-5 text-yellow-400 ml-8"/>
@@ -69,14 +71,14 @@ const Hero: React.FC = () => {
                     <SparkleIcon className="w-6 h-6 text-indigo-400"/>
                 </div>
                 
-                <div className="absolute top-1/2 -left-8 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg flex items-center">
+                {/* <div className="absolute top-1/2 -left-8 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg flex items-center">
                   <AustraliaFlag className="w-6 h-6 rounded-full" />
                   <span className="ml-2 font-semibold text-sm">Australia</span>
                 </div>
                  <div className="absolute bottom-1/4 -right-10 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg flex items-center">
                   <USFlag className="w-6 h-6 rounded-full" />
                   <span className="ml-2 font-semibold text-sm">United States</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

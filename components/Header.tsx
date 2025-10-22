@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { ChevronDownIcon, MenuIcon, XIcon } from './Icons';
+import { ChevronDownIcon, MenuIcon, XIcon } from './Icons'; // Assuming 'Icons' is a valid path to your SVG icons
 
 const NavLink: React.FC<{ href: string; children: React.ReactNode; hasDropdown?: boolean }> = ({ href, children, hasDropdown }) => (
   <a href={href} className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200">
@@ -17,7 +16,10 @@ const Header: React.FC = () => {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold text-gray-900">LOGO</a>
+            {/* Replaced 'LOGO' text with an image tag */}
+            <a href="#">
+              <img src="\dataverselogoRM.png" alt="Dataverse Logo" className="h-10 w-auto" /> 
+            </a>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <NavLink href="#">About Us</NavLink>

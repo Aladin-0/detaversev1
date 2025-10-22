@@ -1,11 +1,10 @@
-
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import WhyAustralia from './components/WhyAustralia';
 import WhyUK from './components/WhyUK';
-import Destinations from './components/Destinations';
+import Courses from './components/Courses';
 import Affiliates from './components/Affiliates';
 import Testimonials from './components/Testimonials';
 import Cta from './components/Cta';
@@ -20,7 +19,7 @@ const App: React.FC = () => {
         <Stats />
         <WhyAustralia />
         <WhyUK />
-        <Destinations />
+        <Courses />
         <Affiliates />
         <Testimonials />
         <Cta />
